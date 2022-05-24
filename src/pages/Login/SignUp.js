@@ -1,9 +1,9 @@
 import React from 'react';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
-import Loading from '../../components/Loading';
 import { Link, useNavigate } from 'react-router-dom';
+import Loading from '../../components/Loading';
+import auth from '../../firebase.init';
 import useToken from '../../hooks/useToken';
 
 const SignUp = () => {
@@ -33,7 +33,7 @@ const SignUp = () => {
     }
 
     if (token) {
-        navigate('/products');
+        navigate('/');
     }
 
     const onSubmit = async data => {

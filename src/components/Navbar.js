@@ -1,11 +1,11 @@
 import { signOut } from 'firebase/auth';
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../firebase.init';
 
 const Navbar = () => {
-    const [user] = useState(true); //useAuthState(auth);
+    const [user] = useAuthState(auth);
 
     const logout = () => {
         signOut(auth);

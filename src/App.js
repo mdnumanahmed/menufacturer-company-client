@@ -1,19 +1,19 @@
 import { Route, Routes } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./App.css";
-import AdminRoute from "./authentication/AdminRoute";
 import PrivateRoute from "./authentication/PrivateRoute";
 import Navbar from "./components/Navbar";
-import publicRoutes from "./routes/publicRoutes";
-import privateRoutes from "./routes/privateRoutes";
-import Dashboard from "./pages/Dashboard/Dashboard";
-import adminRoutes from "./routes/adminRoutes";
-import MyProfile from "./pages/Dashboard/MyProfile";
-import MyOrders from "./pages/Dashboard/MyOrders";
-import AddReview from "./pages/Dashboard/AddReview";
-import MakeAdmin from "./pages/Dashboard/MakeAdmin";
 import AddProduct from "./pages/Dashboard/AddProduct";
-import ManageProducts from "./pages/Dashboard/ManageProducts";
+import AddReview from "./pages/Dashboard/AddReview";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import MakeAdmin from "./pages/Dashboard/MakeAdmin";
 import ManageAllOrders from "./pages/Dashboard/ManageAllOrders";
+import ManageProducts from "./pages/Dashboard/ManageProducts";
+import MyOrders from "./pages/Dashboard/MyOrders";
+import MyProfile from "./pages/Dashboard/MyProfile";
+import privateRoutes from "./routes/privateRoutes";
+import publicRoutes from "./routes/publicRoutes";
 
 function App() {
   return (
@@ -42,6 +42,7 @@ function App() {
 
 
       </Routes>
+      <ToastContainer />
     </div>
   );
 }

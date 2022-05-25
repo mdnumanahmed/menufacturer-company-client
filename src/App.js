@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import "./App.css";
 import AdminRoute from "./authentication/AdminRoute";
 import PrivateRoute from "./authentication/PrivateRoute";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import AddProduct from "./pages/Dashboard/AddProduct";
 import AddReview from "./pages/Dashboard/AddReview";
@@ -41,6 +42,7 @@ function App() {
           <Route path="manage-all-orders" element={<AdminRoute><ManageAllOrders/></AdminRoute>}></Route>
         </Route>
       </Routes>
+      <Footer/>
       <ToastContainer />
     </div>
   );

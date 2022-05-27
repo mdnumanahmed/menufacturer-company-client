@@ -24,7 +24,11 @@ const Navbar = () => {
         <li><NavLink to="/blogs">Blogs</NavLink></li>
         <li><NavLink to="/portfolio">Portfolio</NavLink></li>
         <li><NavLink to="/contact">Contact</NavLink></li>
-        <li>{user ? <button className="btn btn-ghost" onClick={logout} >Sign Out</button> : <NavLink to="/login">Login</NavLink>}</li>
+        <li>{user ? <><button 
+            className="btn btn-ghost" onClick={logout} >Sign Out</button>  
+            <span className='text-bold text-primary'>{user?.displayName}</span>
+            </>
+            : <NavLink to="/login">Login</NavLink>}</li>
     </>
     return (
         <div className="navbar bg-base-100">

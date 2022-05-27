@@ -1,13 +1,15 @@
+import AddProduct from "../pages/Dashboard/AddProduct";
 import AddReview from "../pages/Dashboard/AddReview";
 import Dashboard from "../pages/Dashboard/Dashboard";
-import MyOrders from "../pages/Dashboard/MyOrders";
-import MyProfile from "../pages/Dashboard/MyProfile";
-import AddProduct from "../pages/Dashboard/AddProduct";
 import MakeAdmin from "../pages/Dashboard/MakeAdmin";
 import ManageAllOrders from "../pages/Dashboard/ManageAllOrders";
 import ManageProducts from "../pages/Dashboard/ManageProducts";
+import MyOrders from "../pages/Dashboard/MyOrders";
+import MyProfile from "../pages/Dashboard/MyProfile";
+import Purchase from "../pages/Products/Purchase";
 
 const privateRoutes = [    
+    {path: "product/:id", name: "Purchase", Component: Purchase },
     {path: "dashboard", name: "Dashboard", Component: Dashboard },
     {path: "myprofile", name: "My Profile", Component: MyProfile },
     {path: "my-orders", name: "My Orders", Component: MyOrders },

@@ -1,9 +1,11 @@
 import React from 'react';
+import loadingSpinner from "../assets/images/spinner.gif";
+
 
 const Loading = () => {
     return (
-        <div className='min-h-[96vh] flex justify-center items-center'>
-            <div className="radial-progress text-primary text-5xl">Loading</div>
+        <div className='w-50 mx-auto'>
+            <img style={{maxHeight: "500px"}} className='w-100 mx-auto' src={loadingSpinner} alt="" />
         </div>
     );
 };

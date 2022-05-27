@@ -1,8 +1,12 @@
 import React from "react";
+import { Link, useParams } from "react-router-dom";
 
-const Product = ({ product }) => {
-  const { img, name, description, price, minOrderQuantity, availableQuantity } =
+const Product = ({ product, refetch }) => {
+  const {id} = useParams()
+  
+  const { _id, img, name, description, price, minOrderQuantity, availableQuantity } =
     product;
+    refetch();
 
   return (
     <div className="card lg:max-w-md bg-base-100 shadow-xl">
@@ -19,7 +23,7 @@ const Product = ({ product }) => {
         <p><strong>Available Quantity : </strong> {availableQuantity}</p>
         <p><strong>Price : </strong>$ {price}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+        <Link to={`product/${_id}`} className="btn btn-outline btn-secondary font-bold">Buy Now</Link>
         </div>
       </div>
     </div>

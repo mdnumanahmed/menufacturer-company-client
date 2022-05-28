@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import { Carousel } from 'react-responsive-carousel';
@@ -82,10 +83,12 @@ const Portfolio = () => {
                     <div className="mockup-code text-center my-8">
                         <pre><code className='text-xl font-bold'>Projects Links, that I Completed:</code></pre>
                     </div>
-                    {/* <div>
+                    <div>
                         <div>
-                            <p className='mb-3'>* <Link className='font-bold' to="#">https://molinard-perfumer.web.app/</Link></p>
-                            <Carousel autoPlay={true}>
+                            <p className='mb-3'>* <Link className='font-bold' to="#">https://ns-perfume-center.web.app/</Link></p>
+                            <p className='mb-3'>* <Link className='font-bold' to="#">https://book-review-site-ns.netlify.app/</Link></p>
+                            <p className='mb-3'>* <Link className='font-bold' to="#">https://boi-ghor-ns.netlify.app/</Link></p>
+                            {/* <Carousel autoPlay={true}>
                                 <div>
                                     <img src={molinard1} alt='' />
                                 </div>
@@ -110,9 +113,9 @@ const Portfolio = () => {
                                 <div>
                                     <img src={molinard8} alt='' />
                                 </div>
-                            </Carousel>
+                            </Carousel> */}
                         </div>
-                        <div>
+                        {/* <div>
                             <p>* <Link className='font-bold' to="#">https://quick-computing.netlify.app/</Link></p>
                             <Carousel autoPlay={true}>
                                 <div>
@@ -157,8 +160,8 @@ const Portfolio = () => {
                                     <img src={ydkjs8} alt='' />
                                 </div>
                             </Carousel>
-                        </div>
-                    </div> */}
+                        </div> */}
+                    </div>
                 </div>
             </div>
         </div>

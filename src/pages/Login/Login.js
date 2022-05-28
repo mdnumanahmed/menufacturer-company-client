@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
-import { Link, useNavigate, useLocation } from 'react-router-dom';
-import useToken from '../../hooks/useToken';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../../components/Loading';
+import auth from '../../firebase.init';
+import useToken from '../../hooks/useToken';
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -98,7 +98,7 @@ const Login = () => {
                         </div>
 
                         {signInError}
-                        <input className='btn w-full max-w-xs text-white' type="submit" value="Login" />
+                        <input className='btn btn-success w-full max-w-xs text-white' type="submit" value="Login" />
                     </form>
                     <p><small>New to NS Industries <Link className='text-primary' to="/signup">Create New Account</Link></small></p>
                     <div className="divider">OR</div>

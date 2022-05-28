@@ -62,7 +62,7 @@ const AddProduct = () => {
     }
 
     return (
-        <div>
+        <div className='w-96 mx-auto p-7 bg-slate-200 rounded-lg shadow-lg'>
             <h2 className="text-2xl">Add a New Doctor</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -185,7 +185,7 @@ const AddProduct = () => {
                     </label>
                 </div>
 
-                <input className='btn w-full max-w-xs text-white' type="submit" value="Add" />
+                <input className='btn btn-success w-full max-w-xs text-white' type="submit" value="Add" />
             </form>
         </div>
     );

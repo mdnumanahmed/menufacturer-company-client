@@ -14,6 +14,7 @@ import ManageAllOrders from "./pages/Dashboard/ManageAllOrders";
 import ManageProducts from "./pages/Dashboard/ManageProducts";
 import MyOrders from "./pages/Dashboard/MyOrders";
 import MyProfile from "./pages/Dashboard/MyProfile";
+import Payment from "./pages/Dashboard/Payment";
 import Purchase from "./pages/Products/Purchase";
 import privateRoutes from "./routes/privateRoutes";
 import publicRoutes from "./routes/publicRoutes";
@@ -34,12 +35,13 @@ function App() {
         </Route>
         <Route path="/product/:id" element={
           <PrivateRoute>
-            <Purchase />
+          <Purchase />
           </PrivateRoute>}>
-          </Route>
+        </Route>
 
         <Route path="dashboard" element={<Dashboard />} >
           <Route index element={<MyProfile/>}></Route>     
+        <Route path="payment/:id" element={<Payment/>}></Route>
           <Route path="my-orders" element={<MyOrders/>}></Route>
           <Route path="my-orders" element={<MyOrders/>}></Route>
           <Route path="add-review" element={<AddReview/>}></Route>

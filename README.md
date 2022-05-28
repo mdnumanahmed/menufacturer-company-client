@@ -1,16 +1,16 @@
-> # ["NS INDUSTRIES" Live Website Link :](https://computer-manager-3faf4.web.app/)
+> # ["NS INDUSTRIES" Live Website Link :](https://ns-industries.web.app/)
 
-### [https://computer-manager-3faf4.web.app/](https://computer-manager-3faf4.web.app/)
+### [https://ns-industries.web.app/](https://ns-industries.web.app/)
 
-> # ["Computer Manager Client" Private Repo Link :](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-MahfujAhsan)
+> # ["NS INDUSTRIES Client" Private Repo Link :](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-numansaady)
 
-### [https://github.com/programming-hero-web-course1/manufacturer-website-client-side-MahfujAhsan](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-MahfujAhsan)
+### [https://github.com/programming-hero-web-course1/manufacturer-website-client-side-numansaady](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-numansaady)
 
 ---
 
-> # ["Computer Manager Server" Private Repo Link :](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-MahfujAhsan)
+> # ["NS INDUSTRIES Server" Private Repo Link :](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-numansaady)
 
-### [https://github.com/programming-hero-web-course1/manufacturer-website-server-side-MahfujAhsan](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-MahfujAhsan)
+### [https://github.com/programming-hero-web-course1/manufacturer-website-server-side-numansaady](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-numansaady)
 
 ---
 

@@ -92,7 +92,7 @@ const Purchase = () => {
                     </label>
                     <input name='price' type="number" value={product.price} className="input input-bordered w-full max-w-xs lg:max-w-xl" disabled />
                     <label className="label">
-                        <span className="label-text-alt font-bold">Order Quantity: (min. 100pcs)</span>
+                        <span className="label-text-alt font-bold">Order Quantity: (min. 10pcs)</span>
                     </label>
                     <input name='order' type="number" onChange={handleQuantity} value={product.minOrder} className="input input-bordered w-full max-w-xs lg:max-w-xl" />
                     <label className="label">

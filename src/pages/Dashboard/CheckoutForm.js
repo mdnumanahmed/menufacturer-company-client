@@ -15,7 +15,7 @@ const CheckoutForm = ({ order }) => {
     const price = (order.price * order.order);
 
     useEffect(() => {
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch('https://enigmatic-cove-82612.herokuapp.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -84,7 +84,7 @@ const CheckoutForm = ({ order }) => {
                 order: order.productName,
                 transactionId: paymentIntent.id,
             }
-            fetch(`http://localhost:5000/order/${order._id}`, {
+            fetch(`https://enigmatic-cove-82612.herokuapp.com/order/${order._id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

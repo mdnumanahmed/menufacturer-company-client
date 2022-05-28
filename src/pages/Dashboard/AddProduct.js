@@ -7,7 +7,7 @@ import Loading from '../../components/Loading';
 const AddProduct = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const { data: products, isLoading } = useQuery('products', () => fetch('http://localhost:5000/product').then(res => res.json()))
+    const { data: products, isLoading } = useQuery('products', () => fetch('https://enigmatic-cove-82612.herokuapp.com/product').then(res => res.json()))
 
     const imageStorageKey='c7aac89c32721a080bf23ab590824801';
 
@@ -33,7 +33,7 @@ const AddProduct = () => {
                     price: data.price,
                 }
                 // send to your database 
-                fetch('http://localhost:5000/product', {
+                fetch('https://enigmatic-cove-82612.herokuapp.com/product', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

@@ -11,7 +11,7 @@ const Purchase = () => {
     const [user] = useAuthState(auth);
     const navigate = useNavigate();
     useEffect(() => {
-        axios.get(`http://localhost:5000/product/${id}`)
+        axios.get(`https://enigmatic-cove-82612.herokuapp.com/product/${id}`)
             .then(function (response) {
                 setProduct(response.data);                
             })
@@ -43,7 +43,7 @@ const Purchase = () => {
             shippingAdd: shippingAdd,
             phone: phone
         };
-        axios.post('http://localhost:5000/order', orderInfo)
+        axios.post('https://enigmatic-cove-82612.herokuapp.com/order', orderInfo)
             .then(function (response) {
                 console.log(response)
                 if (response.data.insertedId) {

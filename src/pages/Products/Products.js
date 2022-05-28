@@ -4,7 +4,7 @@ import Loading from '../../components/Loading';
 import Product from './Product';
 
 const Products = () => {
-    const { data: products, isLoading, refetch } = useQuery('products', () => fetch('http://localhost:5000/product').then(res => res.json()));
+    const { data: products, isLoading, refetch } = useQuery('products', () => fetch('https://enigmatic-cove-82612.herokuapp.com/product').then(res => res.json()));
     if (isLoading) {
         return <Loading />
     };

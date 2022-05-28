@@ -9,7 +9,7 @@ import auth from '../../firebase.init';
 const AddReview = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
     const [user] = useAuthState(auth);
-    const { data: reviews, isLoading } = useQuery('reviews', () => fetch('http://localhost:5000/review').then(res => res.json()))
+    const { data: reviews, isLoading } = useQuery('reviews', () => fetch('https://enigmatic-cove-82612.herokuapp.com/review').then(res => res.json()))
 
     const imageStorageKey='c7aac89c32721a080bf23ab590824801';
 
@@ -32,7 +32,7 @@ const AddReview = () => {
                     description: data.description,
                 }
                 // send to your database 
-                fetch('http://localhost:5000/review', {
+                fetch('https://enigmatic-cove-82612.herokuapp.com/review', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

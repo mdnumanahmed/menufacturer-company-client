@@ -5,7 +5,7 @@ const DeleteConfirmModal = ({ deleting, refetch, setDeleting }) => {
     const { _id, name } = deleting;
 
     const handleDelete = () => {
-        fetch(`http://localhost:5000/product/${_id}`, {
+        fetch(`https://enigmatic-cove-82612.herokuapp.com/product/${_id}`, {
             method: 'DELETE',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

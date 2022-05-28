@@ -9,7 +9,7 @@ import CheckoutForm from './CheckoutForm';
 const stripePromise = loadStripe('pk_test_51L4CHNHvaAGSkGoDzKTyON3c6MaoPVeqsipHzy0noB8fqEuZA1QiO7ftVlfZf5QIePO8T9avkbPARp8KtBLfSJjG00L0ubLjoG');
 const Payment = () => {
     const { id } = useParams();
-    const url = `http://localhost:5000/order/${id}`;
+    const url = `https://enigmatic-cove-82612.herokuapp.com/order/${id}`;
     const { data: order, isLoading } = useQuery(['order', id], () => fetch(url, {
         method: 'GET',
         headers: {
